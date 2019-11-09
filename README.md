@@ -6,7 +6,7 @@ https://linuxize.com/post/how-to-install-and-use-docker-on-ubuntu-18-04/ .
 For other platforms have a look at
 https://docs.docker.com/v17.12/install/ .
 
-## 2. Download repositories
+## 2. Download repositories and build docker container
 ```
 git clone https://github.com/tom-doerr/commonroad-docker.git
 cd commonroad-docker
