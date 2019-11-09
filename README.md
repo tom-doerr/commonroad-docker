@@ -11,7 +11,7 @@ https://docs.docker.com/v17.12/install/ .
 git clone https://github.com/tom-doerr/commonroad-docker.git
 cd commonroad-docker
 docker build -t "commonroad_search"  - < commonroad_search.dockerfile
-git clone https://gitlab.lrz.de/tum-cps/commonroad-search.git ..
+git clone https://gitlab.lrz.de/tum-cps/commonroad-search.git ../commonroad-search
 cd ../commonroad-search
 ```
 
