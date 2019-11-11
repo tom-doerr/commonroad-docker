@@ -1,3 +1,6 @@
+# What is it?
+This repository provides a dockerfile to simplify the setup of CommonRoad-Search (https://gitlab.lrz.de/tum-cps/commonroad-search).
+
 # Installation
 ## 1. Install docker
 You can find installation instructions for Ubuntu at
