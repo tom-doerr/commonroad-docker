@@ -1,4 +1,3 @@
-#FROM ubuntu:bionic
 FROM continuumio/anaconda3
 
 RUN conda install jupyter
