@@ -4,7 +4,7 @@ This repository provides a dockerfile to simplify the setup of CommonRoad-Search
 # Installation
 ## Option 1 (recommended): Use the prebuild docker image
 ### Install docker
-On Ubuntu/Debian/Linux-Mint:
+On Ubuntu/Debian/Linux-Mint etc.:
 ```
 sudo apt-get install docker.io
 ```
