@@ -29,7 +29,7 @@ You can now access the jupyter notebooks by opening `localhost:9000` in your bro
 
 ## Option 2: Build the docker image yourself
 ### Install docker
-On Ubuntu/Debian/Linux-Mint:
+On Ubuntu/Debian/Linux-Mint etc.:
 ```
 sudo apt-get install docker.io
 ```
