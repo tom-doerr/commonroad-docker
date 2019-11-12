@@ -21,7 +21,7 @@ cd ../commonroad-search/notebooks
 ## 3. Run the container
 Run the following command to start the docker container:
 ```
-docker run -it -p 9000:8888 --mount src="$(pwd)",target=/commonroad-search,type=bind commonroad_search
+sudo docker run -it -p 9000:8888 --mount src="$(pwd)",target=/commonroad-search,type=bind commonroad_search
 ```
 You can now access the jupyter notebooks by opening `localhost:9000` in your browser.
 
