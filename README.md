@@ -2,10 +2,12 @@
 This repository provides a dockerfile to simplify the setup of CommonRoad-Search (https://gitlab.lrz.de/tum-cps/commonroad-search).
 
 # Installation
-## 1. Option (recommended): Use prebuild docker image
+## Option 1 (recommended): Use the prebuild docker image
 ### Install docker
 On Ubuntu/Debian/Linux-Mint:
-`sudo apt-get install docker.io`
+```
+sudo apt-get install docker.io
+```
 
 For other platforms have a look at
 https://docs.docker.com/v17.12/install/ .
@@ -25,10 +27,12 @@ sudo docker run -it -p 9000:8888 --mount src="$(pwd)",target=/commonroad-search,
 You can now access the jupyter notebooks by opening `localhost:9000` in your browser.
 
 
-## 2. Option: Build the docker image yourself
+## Option 2: Build the docker image yourself
 ### Install docker
 On Ubuntu/Debian/Linux-Mint:
-`sudo apt-get install docker.io`
+```
+sudo apt-get install docker.io
+```
 
 For other platforms have a look at
 https://docs.docker.com/v17.12/install/ .
