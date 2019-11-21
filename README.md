@@ -15,7 +15,7 @@ https://docs.docker.com/v17.12/install/ .
 ### Download CommonRoad-Search
 ```
 git clone https://gitlab.lrz.de/tum-cps/commonroad-search.git
-cd commonroad-search/notebooks
+cd commonroad-search
 
 ```
 
@@ -43,7 +43,7 @@ git clone https://github.com/tom-doerr/commonroad-docker.git
 cd commonroad-docker
 sudo docker build -t "commonroad_search"  - < commonroad_search.dockerfile
 git clone https://gitlab.lrz.de/tum-cps/commonroad-search.git ../commonroad-search
-cd ../commonroad-search/notebooks
+cd ../commonroad-search
 ```
 
 ### Run the container
