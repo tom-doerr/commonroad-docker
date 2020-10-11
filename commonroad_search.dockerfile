@@ -62,7 +62,14 @@ make
 RUN cd commonroad-search/GSMP/tools/commonroad-collision-checker && \
 python setup.py install
 
-ENTRYPOINT bash -c "source activate commonroad-py37 && cd commonroad-search && jupyter notebook --ip 0.0.0.0 --no-browser --allow-root --NotebookApp.token='' --NotebookApp.password=''"
+RUN apt-get update && apt-get install -y \
+socat \
+python-qt4
+
+#RUN ln -s /usr/bin/iptables-nft /usr/local/bin/iptables
+#RUN iptables-nft -t nat -A PREROUTING -i eth0 -p tcp --dport 8888 -j REDIRECT --to-port 9000
+
+ENTRYPOINT bash -c "source activate commonroad-py37 && cd commonroad-search && socat TCP-LISTEN:8888,fork TCP:127.0.0.1:9000 & jupyter notebook --ip 0.0.0.0 --no-browser --allow-root --port 9000 --notebook-dir '/commonroad-search/notebooks'"
 
 
 
